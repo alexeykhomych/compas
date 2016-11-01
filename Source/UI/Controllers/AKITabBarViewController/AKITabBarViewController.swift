@@ -11,10 +11,24 @@ import CoreLocation
 import MapKit
 
 class AKITabBarViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
+    //MARK: Properties
     
+    var manager:CLLocationManager!
+    var myLocations: [CLLocation] = []
+    
+    //MARK: override methods
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        manager = CLLocationManager()
+        manager.delegate = self
+        manager.desiredAccuracy = kCLLocationAccuracyBest
+        manager.requestAlwaysAuthorization()
+        manager.startUpdatingLocation()
+        
+        let myview = AKITabBarView()
+        let mapView = myview.mapView
+        mapView.delegate = self
     }
     
     override func didReceiveMemoryWarning() {
