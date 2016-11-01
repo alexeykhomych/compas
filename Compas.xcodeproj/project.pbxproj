@@ -15,6 +15,7 @@
 		84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */; };
 		84FE91D81DC7B39200162DF8 /* AKITabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */; };
 		84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */; };
+		84FE91DD1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91DC1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarViewController.xib; sourceTree = "<group>"; };
 		84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarView.swift; sourceTree = "<group>"; };
 		84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarView.xib; sourceTree = "<group>"; };
+		84FE91DC1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_png_by_lg_design-d8ir90s.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		84FE91B81DC7AE5400162DF8 /* Compas */ = {
 			isa = PBXGroup;
 			children = (
+				84FE91DB1DC8E3F000162DF8 /* Images */,
 				84FE91B91DC7AE5400162DF8 /* AKIAppDelegate.swift */,
 				84FE91BD1DC7AE5400162DF8 /* Main.storyboard */,
 				84FE91C01DC7AE5400162DF8 /* Assets.xcassets */,
@@ -97,6 +100,8 @@
 		84FE91CE1DC7AF2000162DF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84FE91DF1DC8E4E500162DF8 /* AKILocationController */,
+				84FE91DE1DC8E4C100162DF8 /* AKIMapController */,
 				84FE91CF1DC7AF2000162DF8 /* AKITabBarViewController */,
 			);
 			path = Controllers;
@@ -119,6 +124,28 @@
 				84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		84FE91DB1DC8E3F000162DF8 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91DC1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		84FE91DE1DC8E4C100162DF8 /* AKIMapController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AKIMapController;
+			sourceTree = "<group>";
+		};
+		84FE91DF1DC8E4E500162DF8 /* AKILocationController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AKILocationController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -182,6 +209,7 @@
 			files = (
 				84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */,
 				84FE91C41DC7AE5400162DF8 /* LaunchScreen.storyboard in Resources */,
+				84FE91DD1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png in Resources */,
 				84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */,
 				84FE91C11DC7AE5400162DF8 /* Assets.xcassets in Resources */,
 				84FE91BF1DC7AE5400162DF8 /* Main.storyboard in Resources */,
@@ -347,6 +375,7 @@
 				84FE91CA1DC7AE5400162DF8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

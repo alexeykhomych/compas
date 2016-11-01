@@ -10,6 +10,6 @@ import UIKit
 import MapKit
 
 class AKITabBarView: UIView {
-    @IBOutlet var mapView: MKMapView!
+    @IBOutlet var mapView: MKMapView?
 
 }

@@ -11,24 +11,28 @@ import CoreLocation
 import MapKit
 
 class AKITabBarViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    //MARK: Properties
+    @IBOutlet var mapView: MKMapView?
+    @IBOutlet var label: UILabel?
+    @IBAction func currentLocation(sender: UIButton) {
+        
+    }
     
-    var manager:CLLocationManager!
-    var myLocations: [CLLocation] = []
+    //MARK: Properties
+    var startLocation: CLLocation!
+    var locationManager = CLLocationManager()
+    var myLocations:    [CLLocation] = []
+    var tabBarView:     AKITabBarView?
     
     //MARK: override methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        manager = CLLocationManager()
-        manager.delegate = self
-        manager.desiredAccuracy = kCLLocationAccuracyBest
-        manager.requestAlwaysAuthorization()
-        manager.startUpdatingLocation()
-        
-        let myview = AKITabBarView()
-        let mapView = myview.mapView
-        mapView.delegate = self
+    
+        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        self.locationManager.delegate = self
+
+        self.locationManager.requestLocation()
+        self.locationManager.startUpdatingLocation()
     }
     
     override func didReceiveMemoryWarning() {
@@ -37,5 +41,21 @@ class AKITabBarViewController: UIViewController, CLLocationManagerDelegate, MKMa
     
     override func awakeFromNib() {
         super.awakeFromNib()
+    }
+    
+    //MARK: location
+    
+    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
+    {
+        let location = locations.last
+        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
+        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
+        self.mapView?.setRegion(region, animated: true)
+        self.locationManager.stopUpdatingLocation()
+    }
+    
+    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
+//        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
+//        self.label?.text = "locations = \(locValue.latitude) \(locValue.longitude)"
     }
 }
