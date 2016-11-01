@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		84FE91BA1DC7AE5400162DF8 /* AKIAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91B91DC7AE5400162DF8 /* AKIAppDelegate.swift */; };
+		84FE91BF1DC7AE5400162DF8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91BD1DC7AE5400162DF8 /* Main.storyboard */; };
+		84FE91C11DC7AE5400162DF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91C01DC7AE5400162DF8 /* Assets.xcassets */; };
+		84FE91C41DC7AE5400162DF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91C21DC7AE5400162DF8 /* LaunchScreen.storyboard */; };
+		84FE91D41DC7AF6F00162DF8 /* AKITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */; };
+		84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */; };
+		84FE91D81DC7B39200162DF8 /* AKITabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */; };
+		84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		84FE91B61DC7AE5400162DF8 /* Compas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compas.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FE91B91DC7AE5400162DF8 /* AKIAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AKIAppDelegate.swift; sourceTree = "<group>"; };
+		84FE91BE1DC7AE5400162DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		84FE91C01DC7AE5400162DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		84FE91C31DC7AE5400162DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84FE91C51DC7AE5400162DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarViewController.swift; sourceTree = "<group>"; };
+		84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarViewController.xib; sourceTree = "<group>"; };
+		84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarView.swift; sourceTree = "<group>"; };
+		84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		84FE91B31DC7AE5300162DF8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		84FE91AD1DC7AE5300162DF8 = {
+			isa = PBXGroup;
+			children = (
+				84FE91CB1DC7AF2000162DF8 /* Source */,
+				84FE91B81DC7AE5400162DF8 /* Compas */,
+				84FE91B71DC7AE5400162DF8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		84FE91B71DC7AE5400162DF8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91B61DC7AE5400162DF8 /* Compas.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		84FE91B81DC7AE5400162DF8 /* Compas */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91B91DC7AE5400162DF8 /* AKIAppDelegate.swift */,
+				84FE91BD1DC7AE5400162DF8 /* Main.storyboard */,
+				84FE91C01DC7AE5400162DF8 /* Assets.xcassets */,
+				84FE91C21DC7AE5400162DF8 /* LaunchScreen.storyboard */,
+				84FE91C51DC7AE5400162DF8 /* Info.plist */,
+			);
+			path = Compas;
+			sourceTree = "<group>";
+		};
+		84FE91CB1DC7AF2000162DF8 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91CC1DC7AF2000162DF8 /* Classes */,
+				84FE91CD1DC7AF2000162DF8 /* UI */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		84FE91CC1DC7AF2000162DF8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		84FE91CD1DC7AF2000162DF8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91CE1DC7AF2000162DF8 /* Controllers */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		84FE91CE1DC7AF2000162DF8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91CF1DC7AF2000162DF8 /* AKITabBarViewController */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		84FE91CF1DC7AF2000162DF8 /* AKITabBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91D01DC7AF2000162DF8 /* Views */,
+				84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */,
+				84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */,
+			);
+			path = AKITabBarViewController;
+			sourceTree = "<group>";
+		};
+		84FE91D01DC7AF2000162DF8 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */,
+				84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		84FE91B51DC7AE5300162DF8 /* Compas */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 84FE91C81DC7AE5400162DF8 /* Build configuration list for PBXNativeTarget "Compas" */;
+			buildPhases = (
+				84FE91B21DC7AE5300162DF8 /* Sources */,
+				84FE91B31DC7AE5300162DF8 /* Frameworks */,
+				84FE91B41DC7AE5300162DF8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Compas;
+			productName = Compas;
+			productReference = 84FE91B61DC7AE5400162DF8 /* Compas.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		84FE91AE1DC7AE5300162DF8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Alexey Khomych";
+				TargetAttributes = {
+					84FE91B51DC7AE5300162DF8 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = WD3U2NTNC9;
+					};
+				};
+			};
+			buildConfigurationList = 84FE91B11DC7AE5300162DF8 /* Build configuration list for PBXProject "Compas" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 84FE91AD1DC7AE5300162DF8;
+			productRefGroup = 84FE91B71DC7AE5400162DF8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				84FE91B51DC7AE5300162DF8 /* Compas */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		84FE91B41DC7AE5300162DF8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */,
+				84FE91C41DC7AE5400162DF8 /* LaunchScreen.storyboard in Resources */,
+				84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */,
+				84FE91C11DC7AE5400162DF8 /* Assets.xcassets in Resources */,
+				84FE91BF1DC7AE5400162DF8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		84FE91B21DC7AE5300162DF8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84FE91D41DC7AF6F00162DF8 /* AKITabBarViewController.swift in Sources */,
+				84FE91D81DC7B39200162DF8 /* AKITabBarView.swift in Sources */,
+				84FE91BA1DC7AE5400162DF8 /* AKIAppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		84FE91BD1DC7AE5400162DF8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FE91BE1DC7AE5400162DF8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		84FE91C21DC7AE5400162DF8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				84FE91C31DC7AE5400162DF8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		84FE91C61DC7AE5400162DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		84FE91C71DC7AE5400162DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		84FE91C91DC7AE5400162DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Compas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AKI.Compas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		84FE91CA1DC7AE5400162DF8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Compas/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AKI.Compas;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		84FE91B11DC7AE5300162DF8 /* Build configuration list for PBXProject "Compas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FE91C61DC7AE5400162DF8 /* Debug */,
+				84FE91C71DC7AE5400162DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		84FE91C81DC7AE5400162DF8 /* Build configuration list for PBXNativeTarget "Compas" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				84FE91C91DC7AE5400162DF8 /* Debug */,
+				84FE91CA1DC7AE5400162DF8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 84FE91AE1DC7AE5300162DF8 /* Project object */;
+}
