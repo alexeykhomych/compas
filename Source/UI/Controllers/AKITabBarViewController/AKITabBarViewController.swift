@@ -10,29 +10,51 @@ import UIKit
 import CoreLocation
 import MapKit
 
-class AKITabBarViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
-    @IBOutlet var mapView: MKMapView?
-    @IBOutlet var label: UILabel?
-    @IBAction func currentLocation(sender: UIButton) {
-        
-    }
-    
+//extension UIViewController {
+//    func getView<R>() -> R? {
+//        return self.viewIfLoaded.flatMap { $0 as? R }
+//    }
+//}
+
+class AKITabBarViewController: UITabBarController {    
     //MARK: Properties
-    var startLocation: CLLocation!
-    var locationManager = CLLocationManager()
-    var myLocations:    [CLLocation] = []
-    var tabBarView:     AKITabBarView?
+    
+    var tabBarView: AKITabBarView? {
+        return self.getView()
+    }
     
     //MARK: override methods
     
+    override func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
+        print("suqa")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
-    
-        self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        self.locationManager.delegate = self
-
-        self.locationManager.requestLocation()
-        self.locationManager.startUpdatingLocation()
+        
+        let mapController = AKIMapController()
+        let compassController = AKICompassController()
+        let locationController = AKILocationController()
+        
+//        let mapNavigationController = UINavigationController(rootViewController: mapController)
+//        mapNavigationController.title = "Map"
+//        mapNavigationController.tabBarItem.image = UIImage(named: "map")
+        
+//        let mapNavigationController = self.navigationController(mapController, title: "Map")
+        
+//        let locationNavigationController = UINavigationController(rootViewController: locationController)
+//        locationNavigationController.title = "Location"
+//        locationNavigationController.tabBarItem.image = UIImage(named: "location")
+//        
+        
+//        let compassNavigationController = UINavigationController(rootViewController: compassController)
+//        compassNavigationController.title = "Compass"
+//        compassNavigationController.tabBarItem.image = UIImage(named: "compass")
+        
+//        viewControllers = [mapNavigationController, locationNavigationController, compassNavigationController]
+        viewControllers = [self.navigationController(mapController, title: "Map"),
+                            self.navigationController(locationController, title: "Location"),
+                            self.navigationController(compassController, title: "Compass")]
     }
     
     override func didReceiveMemoryWarning() {
@@ -43,19 +65,13 @@ class AKITabBarViewController: UIViewController, CLLocationManagerDelegate, MKMa
         super.awakeFromNib()
     }
     
-    //MARK: location
+    //MARK: Private methods
     
-    func locationManager(manager: CLLocationManager, didUpdateLocations locations: [CLLocation])
-    {
-        let location = locations.last
-        let center = CLLocationCoordinate2D(latitude: location!.coordinate.latitude, longitude: location!.coordinate.longitude)
-        let region = MKCoordinateRegion(center: center, span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1))
-        self.mapView?.setRegion(region, animated: true)
-        self.locationManager.stopUpdatingLocation()
-    }
-    
-    func locationManager(manager: CLLocationManager, didFailWithError error: NSError) {
-//        let locValue:CLLocationCoordinate2D = manager.location!.coordinate
-//        self.label?.text = "locations = \(locValue.latitude) \(locValue.longitude)"
+    private func navigationController(controller: UIViewController, title: String) -> UINavigationController {
+        let navigationController = UINavigationController(rootViewController: controller)
+        navigationController.title = title
+        navigationController.tabBarItem.image = UIImage(named: title.lowercaseString)
+        
+        return navigationController
     }
 }

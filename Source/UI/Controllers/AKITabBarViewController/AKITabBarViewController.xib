@@ -7,8 +7,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AKITabBarViewController" customModule="Compas" customModuleProvider="target">
             <connections>
-                <outlet property="label" destination="Ogg-3k-mqf" id="W8J-fd-2p1"/>
-                <outlet property="mapView" destination="J9q-mY-42X" id="fmB-Ol-Dst"/>
+                <outlet property="tabBarItemCompass" destination="IRY-9J-TQZ" id="LMu-cZ-Kew"/>
+                <outlet property="tabBarItemLocation" destination="2gA-cM-hVD" id="EFs-Qf-F9G"/>
+                <outlet property="tabBarItemMap" destination="bh2-nd-jaD" id="n8h-eF-zhu"/>
                 <outlet property="view" destination="iN0-l3-epB" id="UgR-ek-Lhy"/>
             </connections>
         </placeholder>
@@ -17,29 +18,27 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label autoresizesSubviews="NO" opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" minimumFontSize="8" id="Ogg-3k-mqf">
-                    <rect key="frame" x="0.0" y="430" width="320" height="138"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.0" green="0.3506215821" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <tabBar contentMode="scaleToFill" id="VCB-d9-8U0">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                <tabBar autoresizesSubviews="NO" contentMode="scaleToFill" barStyle="black" id="VCB-d9-8U0">
+                    <rect key="frame" x="0.0" y="519" width="320" height="49"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <items>
                         <tabBarItem title="Map" id="bh2-nd-jaD"/>
                         <tabBarItem title="Location" id="2gA-cM-hVD"/>
                         <tabBarItem title="Compass" id="IRY-9J-TQZ"/>
                     </items>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="oEe-LN-6Un"/>
+                    </connections>
                 </tabBar>
-                <mapView autoresizesSubviews="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" id="J9q-mY-42X">
-                    <rect key="frame" x="0.0" y="49" width="320" height="381"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                </mapView>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="tab" destination="VCB-d9-8U0" id="vCi-e0-a0p"/>
+                <outlet property="tabBarItemCompass" destination="IRY-9J-TQZ" id="X8U-Mo-DZY"/>
+                <outlet property="tabBarItemLocation" destination="2gA-cM-hVD" id="TL8-7p-V9X"/>
+                <outlet property="tabBarItemMap" destination="bh2-nd-jaD" id="O2Y-ZG-Ewv"/>
+            </connections>
             <point key="canvasLocation" x="363" y="316"/>
         </view>
     </objects>

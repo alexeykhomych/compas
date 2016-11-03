@@ -14,8 +14,13 @@
 		84FE91D41DC7AF6F00162DF8 /* AKITabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */; };
 		84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */; };
 		84FE91D81DC7B39200162DF8 /* AKITabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */; };
-		84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */; };
 		84FE91DD1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91DC1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png */; };
+		84FE91E11DCB740900162DF8 /* AKIMapController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91E01DCB740900162DF8 /* AKIMapController.swift */; };
+		84FE91E51DCB744200162DF8 /* AKIMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91E41DCB744200162DF8 /* AKIMapView.swift */; };
+		84FE91E71DCB81E600162DF8 /* AKIMapController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84FE91E61DCB81E600162DF8 /* AKIMapController.xib */; };
+		84FE91E91DCB9B7800162DF8 /* AKILocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91E81DCB9B7700162DF8 /* AKILocationController.swift */; };
+		84FE91EC1DCB9BA400162DF8 /* AKIAbstractController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91EB1DCB9BA400162DF8 /* AKIAbstractController.swift */; };
+		84FE91EF1DCB9CD700162DF8 /* AKICompassController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FE91EE1DCB9CD700162DF8 /* AKICompassController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,11 +30,16 @@
 		84FE91C01DC7AE5400162DF8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FE91C31DC7AE5400162DF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FE91C51DC7AE5400162DF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarViewController.swift; sourceTree = "<group>"; };
+		84FE91D31DC7AF6F00162DF8 /* AKITabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarViewController.swift; sourceTree = "<group>"; tabWidth = 4; usesTabs = 0; wrapsLines = 1; };
 		84FE91D51DC7B01F00162DF8 /* AKITabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarViewController.xib; sourceTree = "<group>"; };
 		84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKITabBarView.swift; sourceTree = "<group>"; };
-		84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKITabBarView.xib; sourceTree = "<group>"; };
 		84FE91DC1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "compass_png_by_lg_design-d8ir90s.png"; sourceTree = "<group>"; };
+		84FE91E01DCB740900162DF8 /* AKIMapController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKIMapController.swift; sourceTree = "<group>"; };
+		84FE91E41DCB744200162DF8 /* AKIMapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKIMapView.swift; sourceTree = "<group>"; };
+		84FE91E61DCB81E600162DF8 /* AKIMapController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AKIMapController.xib; sourceTree = "<group>"; };
+		84FE91E81DCB9B7700162DF8 /* AKILocationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKILocationController.swift; sourceTree = "<group>"; };
+		84FE91EB1DCB9BA400162DF8 /* AKIAbstractController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKIAbstractController.swift; sourceTree = "<group>"; };
+		84FE91EE1DCB9CD700162DF8 /* AKICompassController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AKICompassController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,8 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				84FE91CB1DC7AF2000162DF8 /* Source */,
-				84FE91B81DC7AE5400162DF8 /* Compas */,
 				84FE91B71DC7AE5400162DF8 /* Products */,
+				84FE91B81DC7AE5400162DF8 /* Compas */,
 			);
 			sourceTree = "<group>";
 		};
@@ -100,6 +110,8 @@
 		84FE91CE1DC7AF2000162DF8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				84FE91ED1DCB9CB800162DF8 /* AKICompassController */,
+				84FE91EA1DCB9B8200162DF8 /* AKIAbstractController */,
 				84FE91DF1DC8E4E500162DF8 /* AKILocationController */,
 				84FE91DE1DC8E4C100162DF8 /* AKIMapController */,
 				84FE91CF1DC7AF2000162DF8 /* AKITabBarViewController */,
@@ -121,7 +133,6 @@
 			isa = PBXGroup;
 			children = (
 				84FE91D71DC7B39200162DF8 /* AKITabBarView.swift */,
-				84FE91D91DC7B56300162DF8 /* AKITabBarView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -137,6 +148,9 @@
 		84FE91DE1DC8E4C100162DF8 /* AKIMapController */ = {
 			isa = PBXGroup;
 			children = (
+				84FE91E31DCB743000162DF8 /* VIews */,
+				84FE91E01DCB740900162DF8 /* AKIMapController.swift */,
+				84FE91E61DCB81E600162DF8 /* AKIMapController.xib */,
 			);
 			path = AKIMapController;
 			sourceTree = "<group>";
@@ -144,8 +158,33 @@
 		84FE91DF1DC8E4E500162DF8 /* AKILocationController */ = {
 			isa = PBXGroup;
 			children = (
+				84FE91E81DCB9B7700162DF8 /* AKILocationController.swift */,
 			);
 			path = AKILocationController;
+			sourceTree = "<group>";
+		};
+		84FE91E31DCB743000162DF8 /* VIews */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91E41DCB744200162DF8 /* AKIMapView.swift */,
+			);
+			name = VIews;
+			sourceTree = "<group>";
+		};
+		84FE91EA1DCB9B8200162DF8 /* AKIAbstractController */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91EB1DCB9BA400162DF8 /* AKIAbstractController.swift */,
+			);
+			path = AKIAbstractController;
+			sourceTree = "<group>";
+		};
+		84FE91ED1DCB9CB800162DF8 /* AKICompassController */ = {
+			isa = PBXGroup;
+			children = (
+				84FE91EE1DCB9CD700162DF8 /* AKICompassController.swift */,
+			);
+			path = AKICompassController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,9 +249,9 @@
 				84FE91D61DC7B01F00162DF8 /* AKITabBarViewController.xib in Resources */,
 				84FE91C41DC7AE5400162DF8 /* LaunchScreen.storyboard in Resources */,
 				84FE91DD1DC8E41800162DF8 /* compass_png_by_lg_design-d8ir90s.png in Resources */,
-				84FE91DA1DC7B56300162DF8 /* AKITabBarView.xib in Resources */,
 				84FE91C11DC7AE5400162DF8 /* Assets.xcassets in Resources */,
 				84FE91BF1DC7AE5400162DF8 /* Main.storyboard in Resources */,
+				84FE91E71DCB81E600162DF8 /* AKIMapController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,8 +262,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FE91E11DCB740900162DF8 /* AKIMapController.swift in Sources */,
 				84FE91D41DC7AF6F00162DF8 /* AKITabBarViewController.swift in Sources */,
+				84FE91E51DCB744200162DF8 /* AKIMapView.swift in Sources */,
 				84FE91D81DC7B39200162DF8 /* AKITabBarView.swift in Sources */,
+				84FE91EF1DCB9CD700162DF8 /* AKICompassController.swift in Sources */,
+				84FE91EC1DCB9BA400162DF8 /* AKIAbstractController.swift in Sources */,
+				84FE91E91DCB9B7800162DF8 /* AKILocationController.swift in Sources */,
 				84FE91BA1DC7AE5400162DF8 /* AKIAppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

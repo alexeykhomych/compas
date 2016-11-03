@@ -15,17 +15,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
-        let rootController: AKITabBarViewController = AKITabBarViewController()
-        
-        if let window = self.window {
-            window.rootViewController = rootController
-            window.makeKeyAndVisible()
+        _ = self.window.map {
+            $0.rootViewController = AKITabBarViewController()
+            $0.makeKeyAndVisible()
         }
         
-        
- 
         return true
     }
 

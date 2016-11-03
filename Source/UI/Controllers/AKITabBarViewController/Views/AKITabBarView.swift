@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import MapKit
 
 class AKITabBarView: UIView {
-    @IBOutlet var mapView: MKMapView?
-
+    @IBOutlet var tab: UITabBar?
+    @IBOutlet var tabBarItemMap: UITabBarItem?
+    @IBOutlet var tabBarItemCompass: UITabBarItem?
+    @IBOutlet var tabBarItemLocation: UITabBarItem?
 }
